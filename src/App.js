@@ -2,12 +2,12 @@ import "./App.css";
 // import Row from "./components/Row/Row";
 import requests from "./request";
 // import Banner from "./components/Banner/Banner";
-import {Navbar, Row, Banner} from "./components"
+import { Row, Banner, Navbar} from "./components"
 
 function App() {
 	return (
 		<div className="App">
-			<h1 style={{ color: "red" }}>NETFLIX</h1>
+			
 			<Navbar/>
 			<Banner/>
 			<Row title="NETFLIX ORIGNALS" fetchUrl={requests.fetchNetflixOrignals} isLargeRow />
