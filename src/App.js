@@ -1,11 +1,15 @@
 import "./App.css";
-import Row from "./Row";
+// import Row from "./components/Row/Row";
 import requests from "./request";
+// import Banner from "./components/Banner/Banner";
+import {Navbar, Row, Banner} from "./components"
 
 function App() {
 	return (
 		<div className="App">
-			<h1 style={{color: "red"}}>NETFLIX</h1>
+			<h1 style={{ color: "red" }}>NETFLIX</h1>
+			<Navbar/>
+			<Banner/>
 			<Row title="NETFLIX ORIGNALS" fetchUrl={requests.fetchNetflixOrignals} isLargeRow />
 			<Row title=" Trending Now" fetchUrl={requests.fetchTrending} />
 			<Row title=" Top Rated" fetchUrl={requests.fetchTopRated} />
