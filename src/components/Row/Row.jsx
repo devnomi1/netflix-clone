@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import YouTube from "react-youtube";
 import axios from "../../axios";
 import "./Row.css"
 
@@ -31,6 +32,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 					/>
 				))}
 			</div>
+			<YouTube videoId={trailerUrl } opts={opts}/>
 		</div>
 	);
 }
